@@ -1,3 +1,3 @@
-const bookShelf = [];
+const bookShelf = []
 
-export default bookShelf;
+export default bookShelf

@@ -1,3 +1,3 @@
-const runServer = require('./app/server')
+import init from "./src/server.js";
 
-runServer()
+init();

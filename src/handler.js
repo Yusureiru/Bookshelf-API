@@ -116,7 +116,7 @@ const getBooks = (request, h) => {
           })),
       },
     });
-    response.code(200);
+    res.code(200);
     return res;
   } else if (reading === "0") {
     const res = h.response({
@@ -226,7 +226,7 @@ const editBooks = (request, h) => {
         "Gagal memperbarui buku. readPage tidak boleh lebih besar dari pageCount",
     });
     res.code(400);
-    return response;
+    return res;
   }
   const updatedAt = new Date().toISOString();
   const index = bookshelf.findIndex((book) => book.id === bookId);
